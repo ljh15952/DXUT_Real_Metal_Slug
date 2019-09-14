@@ -24,7 +24,7 @@ public:
 
 	Texture2D* texture;
 
-
+	bool isUI;
 	void Draw() override;
 
 };

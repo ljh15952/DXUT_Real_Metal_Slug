@@ -7,6 +7,8 @@
 #include "Map.h"
 #include "Enemy.h"
 #include "Bullet.h"
+#include "Camera.h"
+// remove position camera
 class MainScene :
 	public Scene
 {
@@ -15,9 +17,6 @@ public:
 	void Update() override;
 	void OnExit() override;
 
-	/*Camera* C;
-	Sprite* S;
-	Sprite* S1;*/
 
 
 	Player* P;

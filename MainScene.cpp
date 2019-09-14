@@ -3,25 +3,21 @@
 //카메라 완성
 void MainScene::Init()
 {
-	/*S = new Sprite;
-	S->Create(L"soldier1_gun.png");
-	S->_position = { 640,360 };
 
-	S1 = new Sprite;
-	S1->Create(L"soldier1_gun.png");
-	S1->_position = { 140,160 };
-
-	C = new Camera();
-
-	C->Follow(S);*/
 
 	map = new Map(L"ground.png");
 	map->LoadMap();
 	this->AddChild(map, 1);
-	Bullet_Manager::GetInstance()->Make_Bullet(map);
+
 
 	P = new Player(map);
 	this->AddChild(P, 2);
+
+	Camera::GetInstance()->CameraInit();
+	Camera::GetInstance()->Follow(P);
+	Bullet_Manager::GetInstance()->Make_Bullet(map);
+
+	
 
 
 	for (int i = 0; i < 1; i++)
@@ -40,19 +36,14 @@ void MainScene::Init()
 
 void MainScene::Update()
 {
-	/*if (DXUTIsKeyDown('W'))
-		S->_position.y -= 10;
-	if (DXUTIsKeyDown('S'))
-		S->_position.y += 10;
-	if (DXUTIsKeyDown('A'))
-		S->_position.x -= 10;
-	if (DXUTIsKeyDown('D'))
-		S->_position.x += 10;
+	Camera::GetInstance()->Update();
+	Camera::GetInstance()->SetTransform();
+	Camera::GetInstance()->SetPos({ P->_position.x + 480 ,P->_position.y - 180 });
 
-	C->Update();
-	C->SetTransform();*/
 
 	LabelRender();
+
+	
 
 	if (Director::GetInstance()->OnMouseDown())
 	{
@@ -92,7 +83,7 @@ void MainScene::LabelRender()
 	if (timer < 0)
 	{
 		time--;
-		timerFont->Create_Label(time, { 640,50 });
+		timerFont->Create_Label(time, { 100,50 });
 		timer = 1;
 	}
 

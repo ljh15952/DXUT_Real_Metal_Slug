@@ -14,6 +14,5 @@ public:
 	void isHit() override;
 
 	Map* map;
-	vector2 MovePos;
 };
 

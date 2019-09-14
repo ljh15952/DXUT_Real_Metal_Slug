@@ -7,9 +7,10 @@ Player::Player(Map* map)
 	Create(L"Tank_1.png");
 	_position = { 150,500 };
 
+	MovePos = { _position.x,_position.y };
+
 	_map = map;
 
-	MovePos = { 150,50 };
 
 	SetSpeed(200);
 
@@ -28,6 +29,8 @@ Player::Player(Map* map)
 	shotPos->Create(L"UFO_1.png");
 	shotPos->_scale = { 0.3f,0.3f };
 
+	
+
 	_jumppos = 80;
 	_mytpye = t_tank;
 
@@ -39,14 +42,15 @@ Player::Player(Map* map)
 	bomb_font = new Label;
 	arms = 100;
 	bomb = 10;
+	FontRender();
+
 }
 
 void Player::Update()
 {
-	FontRender();
 	Movement();
-	p[0].x = (_map->_position.x * -1) + _position.x - 20;
-	p[1].x = (_map->_position.x * -1) + _position.x + 20;
+	p[0].x =  _position.x - 20;
+	p[1].x =  _position.x + 20;
 	for (int i = 0; i < 2; i++)
 	{
 		p[i] += v[i] * _jumppos * Time::deltaTime;
@@ -63,11 +67,11 @@ void Player::Update()
 		}
 	}
 
-
+	cout << _position.x << endl;
 	po->_position = _position;
 	po->_position.y += 7;
 	po->_position.x -= 20;
-	vector2 dif2 = vector2(Director::GetInstance()->p.x - po->_position.x, Director::GetInstance()->p.y - po->_position.y);
+	vector2 dif2 = vector2(Director::GetInstance()->p.x - MovePos.x, Director::GetInstance()->p.y - MovePos.y);
 	float size = sqrt(dif2.x * dif2.x + dif2.y * dif2.y);
 	dif2.x /= size;
 	dif2.y /= size;
@@ -77,6 +81,7 @@ void Player::Update()
 	shotPos->_position = _pos;
 
 	_shotpower = dif2 * 7.5f;
+
 
 }
 
@@ -88,7 +93,8 @@ void Player::Movement()
 
 		if (DXUTIsKeyDown('D') || _position.x < 50)
 		{
-			movetpye ? _position.x += Time::deltaTime * GetSpeed() : _map->_position.x -= Time::deltaTime * GetSpeed();
+		//	movetpye ? _position.x += Time::deltaTime * GetSpeed() : _map->_position.x -= Time::deltaTime * GetSpeed();
+			_position.x += Time::deltaTime * GetSpeed();
 		}
 		if (DXUTIsKeyDown('A'))
 		{
@@ -121,6 +127,7 @@ void Player::Movement()
 void Player::Shot()
 {
 	cout << "SHOT!!" << endl;
+	FontRender();
 	Bullet_Manager::GetInstance()->Shot_Bullet(shotPos->_position, _shotpower, t_one, t_tank);
 	arms--;
 }

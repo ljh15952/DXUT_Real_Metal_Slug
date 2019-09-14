@@ -17,7 +17,7 @@ void Bullet_Manager::Shot_Bullet(vector2 startpos, vector2 shotpower, t_shot_typ
 	{
 		if (!it->_visible)
 		{
-			it->shotpos = startpos + it->_map->_position * -1;
+			it->shotpos = startpos;
 			it->_position = startpos;
 			it->v = shotpower;
 			it->_visible = true;
@@ -53,7 +53,7 @@ void Bullet::Update()
 	v += Time::deltaTime * g;
 	//cout << _map->_position.x * -1<< endl;
 	//_position += v * Time::deltaTime * 100;
-	_position = shotpos - _map->_position * -1;
+	_position = shotpos;
 	_rotation = atan2(v.y, v.x);
 
 

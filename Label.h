@@ -1,6 +1,7 @@
 #pragma once
 #include "Node.h"
 #include "Sprite.h"
+#include "Camera.h"
 class Label :
 	public Node
 {

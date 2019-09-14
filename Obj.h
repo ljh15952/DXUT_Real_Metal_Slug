@@ -15,7 +15,6 @@ public:
 	virtual void Movement() {};
 	virtual void Shot() {};
 
-	vector2 MovePos;
 
 	t_shot_type _shottype;
 	t_obj_type _mytpye;

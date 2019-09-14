@@ -1,17 +1,22 @@
 #pragma once
 #include "Sprite.h"
-class Camera
+#include "Types.h"
+class Camera : public Singleton<Camera>
 {
 public:
 	//Constructors and Destructor
-	Camera();
-
+	void CameraInit();
 	//Game Functions
 	void Update();
 	void Follow(Sprite* following);
 	void Unfollow();
 	bool IsFollowing() const;
 	void SetTransform() const;
+
+	void SetPos(vector2 v) { cameraX = v.x, cameraY = v.y; };
+
+	int cameraX;
+	int cameraY;
 
 private:
 	D3DXMATRIX orthographicMatrix;
@@ -20,7 +25,6 @@ private:
 
 	Sprite* following;
 
-	int cameraX;
-	int cameraY;
+	
 };
 

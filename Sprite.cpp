@@ -7,6 +7,7 @@ Sprite::Sprite()
 	Aninum = 0;
 	Timer = 0;
 	NowFrame = 0;
+	isUI = false;
 }
 
 Sprite::~Sprite()
@@ -83,7 +84,7 @@ void Sprite::Draw()
 	if (texture == nullptr)
 		return;
 
-	Director::GetInstance()->GetSprite()->Begin(D3DXSPRITE_ALPHABLEND | D3DXSPRITE_OBJECTSPACE);
+	isUI ? Director::GetInstance()->GetSprite()->Begin(D3DXSPRITE_ALPHABLEND) : Director::GetInstance()->GetSprite()->Begin(D3DXSPRITE_ALPHABLEND | D3DXSPRITE_OBJECTSPACE);
 	Director::GetInstance()->GetSprite()->SetTransform(&GetMatrix());
 	D3DXVECTOR3 center = { texture->_info.Width * _pivot.x,texture->_info.Height * _pivot.y,0 };
 	Director::GetInstance()->GetSprite()->Draw(texture->_texture, nullptr, &center, NULL, _color);

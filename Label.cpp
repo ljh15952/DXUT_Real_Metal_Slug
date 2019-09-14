@@ -11,8 +11,9 @@ void Label::Create_Label(int str, vector2 vec)
 	for (auto it : to_wstring(str))
 	{
 		Sprite* s = new Sprite;
+		s->isUI = true;
 		s->Create(L"font/" + to_wstring(it - 48) + L".png");
-		s->_position = { Addpos + _position.x,_position.y };
+		s->_position = { Addpos + _position.x ,_position.y };
 		Addpos += 25;
 		sp.push_back(s);
 	}
@@ -26,4 +27,5 @@ void Label::Delete_Label()
 	}
 	sp.clear();
 }
+
 

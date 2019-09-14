@@ -1,8 +1,10 @@
-﻿  MainScene.cpp
+﻿  Player.cpp
 C:\Users\skill_01\Desktop\RMS\Obj.h(10,36): warning C4244:  '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  RMS.cpp
 C:\Users\skill_01\Desktop\RMS\Obj.h(12,26): warning C4244:  'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skill_01\Desktop\RMS\Obj.h(10,36): warning C4244:  '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  코드를 생성하고 있습니다...
-C:\Users\skill_01\Desktop\RMS\Obj.h(12,26): warning C4244:  'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Camera.h(16,38): warning C4244:  '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Camera.h(16,53): warning C4244:  '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Player.cpp(17,24): warning C4244:  '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Player.cpp(18,24): warning C4244:  '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Player.cpp(60,10): warning C4244:  '초기화 중': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Player.cpp(65,15): warning C4244:  '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   RMS_2010.vcxproj -> C:\Users\skill_01\Desktop\RMS\x64\Debug\RMS.exe

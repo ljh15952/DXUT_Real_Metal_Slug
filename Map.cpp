@@ -7,6 +7,7 @@ Map::Map(wstring filename)
 	_pivot = { 0,0 };
 	width = 0;
 	height = 0;
+	_position = {0,0};
 }
 
 Map::~Map()

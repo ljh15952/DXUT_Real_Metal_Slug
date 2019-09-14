@@ -32,6 +32,8 @@ public:
 	Label* arms_font;
 	Label* bomb_font;
 
+	vector2 MovePos;
+	
 	int arms;
 	int bomb;
 

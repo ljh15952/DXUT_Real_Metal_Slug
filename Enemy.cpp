@@ -5,7 +5,6 @@ Enemy::Enemy(Map* _map, vector2 movepos)
 {
 	Create(L"UFO_1.png");
 	_position = { 700,200 };
-	MovePos = movepos;
 	_mytpye = t_ufo;
 	map = _map;
 }
@@ -18,8 +17,6 @@ void Enemy::Update()
 {
 	static float timer = 0;
 	timer += Time::deltaTime;
-	MovePos.x += 0.5f;
-	_position.x = map->_position.x + MovePos.x;
 	if (timer > 0.3f)
 	{
 		Shot();
