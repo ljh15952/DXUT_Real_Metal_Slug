@@ -179,6 +179,9 @@
     <ClCompile Include="Bullet.cpp">
       <Filter>GAME\Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>GAME\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -234,6 +237,9 @@
     </ClInclude>
     <ClInclude Include="Bullet.h">
       <Filter>GAME\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>GAME\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

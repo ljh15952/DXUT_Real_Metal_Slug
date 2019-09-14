@@ -29,7 +29,7 @@ Player::Player(Map* map)
 	shotPos->Create(L"UFO_1.png");
 	shotPos->_scale = { 0.3f,0.3f };
 
-	
+
 
 	_jumppos = 80;
 	_mytpye = t_tank;
@@ -49,8 +49,8 @@ Player::Player(Map* map)
 void Player::Update()
 {
 	Movement();
-	p[0].x =  _position.x - 20;
-	p[1].x =  _position.x + 20;
+	p[0].x = _position.x - 20;
+	p[1].x = _position.x + 20;
 	for (int i = 0; i < 2; i++)
 	{
 		p[i] += v[i] * _jumppos * Time::deltaTime;
@@ -67,7 +67,6 @@ void Player::Update()
 		}
 	}
 
-	cout << _position.x << endl;
 	po->_position = _position;
 	po->_position.y += 7;
 	po->_position.x -= 20;
@@ -87,38 +86,28 @@ void Player::Update()
 
 void Player::Movement()
 {
-	if (!isscreenstop)
-	{
-		End_X_pos > _position.x ? movetpye = true : movetpye = false;
+	End_X_pos > MovePos.x ? movetpye = true : movetpye = false;
 
-		if (DXUTIsKeyDown('D') || _position.x < 50)
-		{
-		//	movetpye ? _position.x += Time::deltaTime * GetSpeed() : _map->_position.x -= Time::deltaTime * GetSpeed();
-			_position.x += Time::deltaTime * GetSpeed();
-		}
-		if (DXUTIsKeyDown('A'))
-		{
-			_position.x -= Time::deltaTime * GetSpeed();
-		}
-	}
-	else
+	if (DXUTIsKeyDown('D'))
 	{
-		if (DXUTIsKeyDown('D') || _position.x < 50)
-		{
-			_position.x += Time::deltaTime * GetSpeed();
-		}
-		if (DXUTIsKeyDown('A') || _position.x > 1200)
-		{
-			_position.x -= Time::deltaTime * GetSpeed();
-		}
+		_position.x += Time::deltaTime * GetSpeed();
+		if (MovePos.x <= 500)
+			MovePos.x += Time::deltaTime * GetSpeed();
 	}
+	if (DXUTIsKeyDown('A') && MovePos.x > 0)
+	{
+		_position.x -= Time::deltaTime * GetSpeed();
+		MovePos.x -= Time::deltaTime * GetSpeed();
+
+	}
+
 
 	if (DXUTIsKeyDown('W'))
 	{
 		v[0].y = v[1].y = -5.5;
 	}
 
-	_position.y = (p[0] + p[1]).y / 2 - 50;
+	_position.y = (p[0] + p[1]).y / 2 - 80;
 	auto dif = p[1] - p[0];
 	float l = atan2(dif.y, dif.x);
 	_rotation = l;

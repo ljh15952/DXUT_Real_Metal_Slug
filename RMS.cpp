@@ -7,8 +7,7 @@
 #include "resource.h"
 #include "Director.h"
 #include "MainScene.h"
-#include "DXUTcamera.h"
-
+#include "Test.h"
 
 
 //--------------------------------------------------------------------------------------
@@ -93,7 +92,7 @@ int main()
 	DXUTCreateWindow(L"Seoul_Homework");
 	DXUTCreateDevice(true, 1280, 720);
 
-	Director::GetInstance()->ChangeScene(new MainScene);
+	Director::GetInstance()->ChangeScene(new Test);
 
 
 	// Start the render loop

@@ -10,6 +10,7 @@ Node::Node()
 	_color = 0xffffffff;
 	_rotation = 0.0f;
 	_parent = nullptr;
+	_layer = 0;
 }
 
 D3DXMATRIX Node::GetMatrix()
@@ -28,6 +29,6 @@ D3DXMATRIX Node::GetMatrix()
 
 void Node::AddChild(Node* child, int layer)
 {
-	_layer = layer;
+	child->_layer = layer;
 	child->_parent = this;
 }
