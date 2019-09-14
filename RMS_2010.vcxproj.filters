@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="ENGINE">
+      <UniqueIdentifier>{f22e80a3-1315-4834-9281-913fd4287534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Director">
+      <UniqueIdentifier>{796fc9b5-36e7-4098-b059-63dd744f8af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Node">
+      <UniqueIdentifier>{5c53eb7e-a046-4e59-932d-f08fdfd2b46b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Renderer">
+      <UniqueIdentifier>{97b756cd-bc07-4641-b3bf-9b135667366c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Texture">
+      <UniqueIdentifier>{4c70e05f-01e4-41a3-8a7c-6d837c87b763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Camera">
+      <UniqueIdentifier>{88b00e1d-f6f1-4721-86e7-ea6976729b51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Label">
+      <UniqueIdentifier>{b4307b01-6112-4a5b-9f8b-b8a021cbec8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Sprite">
+      <UniqueIdentifier>{e21ddc42-c4ae-4b84-9b60-98b1001b6bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Sound">
+      <UniqueIdentifier>{acbe9853-0295-45f9-a0ba-f8f1174deae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Types">
+      <UniqueIdentifier>{0921c9c6-4c83-47a1-83bd-38f13de3015d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ENGINE\Scene">
+      <UniqueIdentifier>{b084b373-7d23-4c43-8b76-592c5ba176ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME">
+      <UniqueIdentifier>{1fd95177-9eed-4eee-8c92-d13c93a60f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\Scene">
+      <UniqueIdentifier>{27866794-16c8-4004-a2d5-adc95e68000f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RMS.cpp" />
+    <ClCompile Include="Director.cpp">
+      <Filter>ENGINE\Director</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>ENGINE\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>ENGINE\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>ENGINE\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>ENGINE\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>ENGINE\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>ENGINE\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>ENGINE\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>ENGINE\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ENGINE\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MainScene.cpp">
+      <Filter>GAME\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="RMS.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="Director.h">
+      <Filter>ENGINE\Director</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>ENGINE\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>ENGINE\Label</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>ENGINE\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>ENGINE\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>ENGINE\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>ENGINE\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>ENGINE\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>ENGINE\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ENGINE\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MainScene.h">
+      <Filter>GAME\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
