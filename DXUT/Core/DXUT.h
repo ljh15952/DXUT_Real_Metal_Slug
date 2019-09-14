@@ -358,6 +358,20 @@ typedef D3DXCOLOR COLOR;
 
 using namespace std;
 
+enum t_shot_type
+{
+	t_one,
+	t_triple,
+	t_homing,
+	t_straight
+};
+
+enum t_obj_type
+{
+	t_tank,
+	t_ufo
+};
+
 #endif
 
 

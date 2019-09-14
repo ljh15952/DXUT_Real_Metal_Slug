@@ -1,10 +1,8 @@
-﻿  Camera.cpp
-C:\Users\skill_01\Desktop\RMS\Camera.cpp(15,38): warning C4244:  '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skill_01\Desktop\RMS\Camera.cpp(16,38): warning C4244:  '=': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skill_01\Desktop\RMS\Camera.cpp(22,13): warning C4244:  '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skill_01\Desktop\RMS\Camera.cpp(22,3): warning C4244:  '인수': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\skill_01\Desktop\RMS\Camera.cpp(25,29): warning C4458:  'following' 선언은 클래스 멤버를 숨깁니다.
+﻿  MainScene.cpp
+C:\Users\skill_01\Desktop\RMS\Obj.h(10,36): warning C4244:  '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   RMS.cpp
+C:\Users\skill_01\Desktop\RMS\Obj.h(12,26): warning C4244:  'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_01\Desktop\RMS\Obj.h(10,36): warning C4244:  '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
-C:\Users\skill_01\Desktop\RMS\Camera.h(21,10): message :  'Camera::following' 선언을 참조하십시오.
+C:\Users\skill_01\Desktop\RMS\Obj.h(12,26): warning C4244:  'return': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   RMS_2010.vcxproj -> C:\Users\skill_01\Desktop\RMS\x64\Debug\RMS.exe

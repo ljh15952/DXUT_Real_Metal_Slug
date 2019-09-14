@@ -51,6 +51,24 @@
     <Filter Include="GAME\Scene">
       <UniqueIdentifier>{27866794-16c8-4004-a2d5-adc95e68000f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GAME\OBJ">
+      <UniqueIdentifier>{abcc99e5-176c-4d48-b32d-eaabf720e344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\OBJ\OBJ">
+      <UniqueIdentifier>{8db21c87-5ed2-418c-ba9b-84b139f60c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\OBJ\Player">
+      <UniqueIdentifier>{428e0b12-9568-421b-9499-ab29b2f18933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\OBJ\Enemy">
+      <UniqueIdentifier>{f2a4f4eb-5bd4-4714-a063-d6c5c4552abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\Map">
+      <UniqueIdentifier>{af0817ca-0b09-46b6-87db-75bdac4d72cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAME\Bullet">
+      <UniqueIdentifier>{e9cf7c42-8397-4566-bd2b-83b191c1e68f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -146,6 +164,21 @@
     <ClCompile Include="MainScene.cpp">
       <Filter>GAME\Scene</Filter>
     </ClCompile>
+    <ClCompile Include="Obj.cpp">
+      <Filter>GAME\OBJ\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>GAME\OBJ\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>GAME\OBJ\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>GAME\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>GAME\Bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -186,6 +219,21 @@
     </ClInclude>
     <ClInclude Include="MainScene.h">
       <Filter>GAME\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj.h">
+      <Filter>GAME\OBJ\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GAME\OBJ\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>GAME\OBJ\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>GAME\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>GAME\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
